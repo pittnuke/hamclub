@@ -5,7 +5,7 @@
 <h1 class="entry-title" itemprop="name"><?php esc_html_e( 'Not Found', 'hamclub' ); ?></h1>
 </header>
 <div class="entry-content" itemprop="mainContentOfPage">
-<p><?php esc_html_e( 'Nothing found for the requested page. Try a search instead?', 'hamclub' ); ?></p>
+<p><?php esc_html_e( 'You called CQ, but noone was listening. Try a search instead?', 'hamclub' ); ?></p>
 <?php get_search_form(); ?>
 </div>
 </article>

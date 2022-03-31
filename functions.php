@@ -1,7 +1,7 @@
 <?php
 add_action( 'after_setup_theme', 'hamclub_setup' );
 function hamclub_setup() {
-load_theme_textdomain( 'blankslate', get_template_directory() . '/languages' );
+load_theme_textdomain( 'hamclub', get_template_directory() . '/languages' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'responsive-embeds' );
@@ -16,7 +16,7 @@ add_action( 'admin_notices', 'hamclub_admin_notice' );
 function hamclub_admin_notice() {
 $user_id = get_current_user_id();
 if ( !get_user_meta( $user_id, 'hamclub_notice_dismissed_5' ) && current_user_can( 'manage_options' ) )
-echo '<div class="notice notice-info"><p>' . __( '<big><strong>hamclub</strong>:</big> Help keep the project alive! <a href="?notice-dismiss" class="alignright">Dismiss</a> <a href="https://calmestghost.com/donate" class="button-primary" target="_blank">Make a Donation</a>', 'blankslate' ) . '</p></div>';
+echo '<div class="notice notice-info"><p>' . __( '<big><strong>hamclub</strong>:</big> Help keep the project alive! <a href="?notice-dismiss" class="alignright">Dismiss</a> <a href="https://calmestghost.com/donate" class="button-primary" target="_blank">Make a Donation</a>', 'hamclub' ) . '</p></div>';
 }
 add_action( 'admin_init', 'hamclub_notice_dismissed' );
 function hamclub_notice_dismissed() {

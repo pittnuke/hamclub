@@ -11,10 +11,10 @@
 <?php else : ?>
 <article id="post-0" class="post no-results not-found">
 <header class="header">
-<h1 class="entry-title" itemprop="name"><?php esc_html_e( 'Nothing Found', 'blankslate' ); ?></h1>
+<h1 class="entry-title" itemprop="name"><?php esc_html_e( 'Nothing Found', 'hamclub' ); ?></h1>
 </header>
 <div class="entry-content" itemprop="mainContentOfPage">
-<p><?php esc_html_e( 'Sorry, nothing matched your search. Please try again.', 'blankslate' ); ?></p>
+<p><?php esc_html_e( 'Sorry, nothing matched your search. Please try again.', 'hamclub' ); ?></p>
 <?php get_search_form(); ?>
 </div>
 </article>
